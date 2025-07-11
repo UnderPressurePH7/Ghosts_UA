@@ -16,7 +16,7 @@
 }
 
 .page-header h1 span {
-    color: var(--primary);
+    color: #2962e3;
 }
 
 .page-header p {
@@ -94,7 +94,7 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--primary);
+    background: #2962e3;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform var(--transition-normal);
@@ -108,7 +108,7 @@
     width: 60px;
     height: 60px;
     border-radius: var(--radius-full);
-    background: rgba(227, 41, 39, 0.1);
+    background: rgba(41, 98, 227, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,13 +117,13 @@
 }
 
 .value-card:hover .value-icon {
-    background: var(--primary);
-    box-shadow: var(--glow-primary);
+    background: #2962e3;
+    box-shadow: 0 0 30px 5px rgba(41, 98, 227, 0.5);
 }
 
 .value-icon i {
     font-size: 24px;
-    color: var(--primary);
+    color: #2962e3;
     transition: color var(--transition-normal);
 }
 
@@ -159,8 +159,8 @@
     left: 10px;
     width: 2px;
     background: linear-gradient(to bottom, 
-        rgba(227, 41, 39, 0.8) 0%, 
-        rgba(227, 41, 39, 0.4) 100%);
+        rgba(41, 98, 227, 0.8) 0%, 
+        rgba(41, 98, 227, 0.4) 100%);
 }
 
 .timeline-item {
@@ -179,7 +179,7 @@
     top: 0;
     width: 20px;
     height: 20px;
-    background: var(--primary);
+    background: #2962e3;
     border-radius: var(--radius-full);
     display: flex;
     justify-content: center;
@@ -187,7 +187,7 @@
     color: white;
     font-weight: 700;
     font-size: 12px;
-    box-shadow: var(--glow-primary);
+    box-shadow: 0 0 30px 5px rgba(41, 98, 227, 0.5);
     z-index: 1;
 }
 
@@ -199,7 +199,7 @@
     width: 60px;
     font-size: 16px;
     font-weight: 700;
-    color: var(--primary);
+    color: #2962e3;
 }
 
 .timeline-content {
@@ -208,7 +208,7 @@
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     transition: transform var(--transition-normal);
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid #2962e3;
 }
 
 .timeline-content:hover {
@@ -258,12 +258,12 @@
     border-radius: var(--radius-full);
     overflow: hidden;
     margin: 0 auto var(--space-md);
-    border: 3px solid var(--primary);
+    border: 3px solid #2962e3;
     transition: all var(--transition-normal);
 }
 
 .team-card:hover .team-avatar {
-    box-shadow: var(--glow-primary);
+    box-shadow: 0 0 30px 5px rgba(41, 98, 227, 0.5);
     transform: scale(1.05);
 }
 
@@ -281,7 +281,7 @@
 
 .team-role {
     font-size: 14px;
-    color: var(--primary);
+    color: #2962e3;
     font-weight: 600;
     margin-bottom: var(--space-sm);
 }
