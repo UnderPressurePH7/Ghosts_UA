@@ -36,7 +36,7 @@
 .accent-title {
     font-size: 74px;
     color: var(--primary);
-    text-shadow: 0 0 15px rgba(227, 41, 39, 0.5);
+    text-shadow: 0 0 15px rgba(39, 114, 227, 0.288);
     position: relative;
     opacity: 0;
     transform: translateY(20px);
