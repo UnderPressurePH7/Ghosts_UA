@@ -245,6 +245,7 @@
     height: auto;
     display: block;
     transition: transform var(--transition-normal);
+    user-select: none;
 }
 
 .media-card:hover img {

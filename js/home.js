@@ -187,6 +187,7 @@ function initPlayButton() {
     if (mediaCard && playButton) {
         playButton.addEventListener('click', function() {
             // Створюємо модальне вікно для відтворення відео
+            const YoutubeVideoId = "YShh-G6dL4A"
             const videoModal = document.createElement('div');
             videoModal.className = 'video-modal';
             videoModal.innerHTML = `
@@ -194,7 +195,7 @@ function initPlayButton() {
                     <button class="video-modal-close"><i class="fas fa-times"></i></button>
                     <div class="video-container">
                         <!-- Вставляємо YouTube iframe з автовідтворенням і без елементів керування -->
-                        <iframe src="https://www.youtube.com/embed/YShh-G6dL4A?autoplay=1&controls=0&disablekb=1&rel=0&showinfo=0" 
+                        <iframe src="https://www.youtube.com/embed/${YoutubeVideoId}?autoplay=1&controls=0&disablekb=1&rel=0&showinfo=0" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
