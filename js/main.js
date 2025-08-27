@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ініціалізація всіх функцій
     initHeader();
     initMobileMenu();
+    initDetails();
     initScrollEffects();
     initParallaxEffects();
     initScrollToTop();
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     init3DEffects();
     initFancyLinks();
     initTypewriterEffect();
+    initClansInfo();
 });
 
 /**
@@ -510,4 +512,53 @@ function initTypewriterEffect() {
         
         observer.observe(element);
     });
+}
+
+// Кастомний <details> <summary> з анімацією
+function initDetails(){
+    document.querySelectorAll(".details").forEach(details=>{
+        details.querySelector(".summary").onclick = _=>details.classList.toggle("open")
+    })
+}
+
+// Динамічне підвантаження ело та іншої інфи кланів
+function initClansInfo(){
+    for (let clan of [
+        document.querySelector("#g_ua"),
+        document.querySelector("#g0_ua"),
+        document.querySelector("#go_ua"),
+        document.querySelector("#g1_ua"),
+        document.querySelector("#g2_ua"),
+        document.querySelector("#g3_ua"),
+        document.querySelector("#g4_ua")
+    ]) {
+        if (clan){
+            fetch(`https://corsproxy.io/?url=https://eu.wargaming.net/clans/wot/${clan.getAttribute("clan_id")}/api/claninfo/`)
+            .then(r=>r.json()).then(data=>{
+                let rating_el = clan.querySelector('.stat-value[data="rating"]')
+                if (rating_el){rating_el.textContent = data.clanview.rating.rating}
+
+                let position_el = clan.querySelector('.stat-value[data="position"]')
+                if (position_el){position_el.textContent = data.clanview.rating.rating_position}
+
+                let members_el = clan.querySelector('.stat-value[data="members"]')
+                if (members_el){members_el.textContent = data.clanview.clan.members_count}
+            })
+
+            let elo_area = clan.querySelector(".clan-elo")
+            if (elo_area){
+                fetch(`https://wgsh-woteu.wargaming.net/game_api/stronghold_info/clan/${clan.getAttribute("clan_id")}`)
+                .then(r=>r.json()).then(data=>{
+                    let elo10el = elo_area.querySelector('.stat-value[data="elo-10"]')
+                    if (elo10el){elo10el.textContent = data.stats["10"].elo}
+
+                    let elo8el = elo_area.querySelector('.stat-value[data="elo-8"]')
+                    if (elo8el){elo8el.textContent = data.stats["8"].elo}
+
+                    let elo6el = elo_area.querySelector('.stat-value[data="elo-6"]')
+                    if (elo6el){elo6el.textContent = data.stats["6"].elo}
+                })
+            }
+        }
+    }
 }

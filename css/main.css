@@ -666,3 +666,37 @@ section {
 .page-header, .page-hero {
     padding-top: 100px;
 }
+
+.clan-elo{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-items: center;
+}
+
+
+.details .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.details.open .content {
+    grid-template-rows: 1fr;
+    padding: 25px 0;
+}
+.details .content > div {
+    min-height: 0;
+}
+.details .summary{
+    cursor: pointer;
+    user-select: none;
+}
+.details .summary::before {
+    content: '⯈';
+    display: inline-block;
+    transition: 0.3s;
+}
+.details.open .summary::before {
+    transform: rotate(90deg);
+}
