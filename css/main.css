@@ -677,9 +677,14 @@ section {
 .details .summary{
     cursor: pointer;
     user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .details .summary::before {
-    content: '⯈';
+    content: "\f04b";
+    font-family: 'FontAwesome';
+    font-size: 12px;
     display: inline-block;
     transition: 0.3s;
 }
