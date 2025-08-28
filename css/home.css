@@ -336,6 +336,7 @@
 
 .about-actions {
     margin-top: var(--space-xl);
+    text-align: center;
 }
 
 /* Секція попереднього перегляду кланів */
@@ -893,11 +894,6 @@
     
     .about-content-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .about-media {
-        order: 1;
-        margin-bottom: var(--space-xl);
     }
     
     .cta-grid {
