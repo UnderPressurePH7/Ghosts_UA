@@ -666,10 +666,7 @@
 /* CTA секція */
 .cta-section {
     padding: var(--space-3xl) 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/cta-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: rgba(0, 0, 0, 0.7);
     position: relative;
 }
 

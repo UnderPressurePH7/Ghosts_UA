@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallaxEffects();
     initScrollToTop();
     initAnimatedElements();
-    initIntensiveParticles();
     init3DEffects();
     initFancyLinks();
     initTypewriterEffect();
@@ -291,85 +290,6 @@ function initAnimatedElements() {
         const delay = Math.random() * 2;
         element.style.animationDelay = `${delay}s`;
     });
-}
-
-/**
- * Ініціалізація інтенсивних частинок для фону
- */
-function initIntensiveParticles() {
-    // Перевіряємо, чи є контейнер для анімації фону
-    const bgAnimation = document.querySelector('.bg-animation');
-    
-    if (bgAnimation) {
-        // Створюємо контейнер для частинок
-        const particlesContainer = document.createElement('div');
-        particlesContainer.className = 'particles-container';
-        bgAnimation.appendChild(particlesContainer);
-        
-        // Створюємо певну кількість частинок
-        const particlesCount = window.innerWidth > 768 ? 30 : 15;
-        
-        for (let i = 0; i < particlesCount; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            
-            // Встановлюємо випадкові розміри та позиції
-            const size = Math.random() * 5 + 1;
-            const posX = Math.random() * 100;
-            const posY = Math.random() * 100;
-            const delay = Math.random() * 5;
-            const duration = Math.random() * 20 + 10;
-            
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-            particle.style.left = `${posX}%`;
-            particle.style.top = `${posY}%`;
-            particle.style.animationDelay = `${delay}s`;
-            particle.style.animationDuration = `${duration}s`;
-            
-            particlesContainer.appendChild(particle);
-        }
-        
-        // Додаємо CSS для частинок
-        const style = document.createElement('style');
-        style.textContent = `
-            .particles-container {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: 1;
-                overflow: hidden;
-            }
-            
-            .particle {
-                position: absolute;
-                background-color: rgba(227, 41, 39, 0.6);
-                border-radius: 50%;
-                box-shadow: 0 0 10px rgba(227, 41, 39, 0.8);
-                animation: float-particle linear infinite;
-            }
-            
-            @keyframes float-particle {
-                0% {
-                    transform: translateY(0) rotate(0deg);
-                    opacity: 0;
-                }
-                10% {
-                    opacity: 1;
-                }
-                90% {
-                    opacity: 1;
-                }
-                100% {
-                    transform: translateY(-100vh) rotate(360deg);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
 }
 
 /**
