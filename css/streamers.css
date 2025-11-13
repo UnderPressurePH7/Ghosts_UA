@@ -148,7 +148,7 @@
 }
 
 .dropdown-item.active {
-    background: rgba(227, 41, 39, 0.2);
+    background: rgba(41, 98, 227, 0.2);
     color: var(--primary);
 }
 
@@ -178,12 +178,12 @@
 
 .streamer-card.live {
     border: 1px solid var(--primary);
-    box-shadow: 0 0 15px rgba(227, 41, 39, 0.3);
+    box-shadow: 0 0 15px rgba(41, 98, 227, 0.3);
     order: -1;
 }
 
 .streamer-card.live:hover {
-    box-shadow: 0 0 20px rgba(227, 41, 39, 0.5);
+    box-shadow: 0 0 20px rgba(41, 98, 227, 0.5);
 }
 
 .streamer-header {
@@ -196,8 +196,8 @@
 }
 
 .streamer-card.live .streamer-header {
-    background: rgba(227, 41, 39, 0.1);
-    border-bottom: 1px solid rgba(227, 41, 39, 0.2);
+    background: rgba(41, 98, 227, 0.1);
+    border-bottom: 1px solid rgba(41, 98, 227, 0.2);
 }
 
 .streamer-avatar {
@@ -213,7 +213,7 @@
 
 .streamer-card.live .streamer-avatar {
     border-color: var(--primary);
-    box-shadow: 0 0 10px rgba(227, 41, 39, 0.5);
+    box-shadow: 0 0 10px rgba(41, 98, 227, 0.5);
 }
 
 .streamer-avatar::before {
@@ -228,7 +228,7 @@
 }
 
 .streamer-card.live .streamer-avatar::before {
-    background: linear-gradient(135deg, rgba(227, 41, 39, 0.2), transparent);
+    background: linear-gradient(135deg, rgba(41, 98, 227, 0.2), transparent);
     animation: rotate-gradient 3s linear infinite;
 }
 
@@ -322,7 +322,7 @@
 /* Ефект пульсації для бейджів у верхній частині */
 @keyframes pulse-badge-top {
     0% { background: rgba(255, 255, 255, 0.1); }
-    50% { background: rgba(227, 41, 39, 0.15); }
+    50% { background: rgba(41, 98, 227, 0.15); }
     100% { background: rgba(255, 255, 255, 0.1); }
 }
 
@@ -345,7 +345,7 @@
     display: none;
     align-items: center;
     gap: var(--space-xs);
-    box-shadow: 0 0 15px rgba(227, 41, 39, 0.5);
+    box-shadow: 0 0 15px rgba(41, 98, 227, 0.5);
     animation: pulse-badge 2s infinite;
     z-index: 1;
 }
@@ -362,7 +362,7 @@
 }
 
 .streamer-card.live .stream-info {
-    border-top: 1px solid rgba(227, 41, 39, 0.2);
+    border-top: 1px solid rgba(41, 98, 227, 0.2);
 }
 
 .stream-title {
@@ -467,7 +467,7 @@
 }
 
 .streamer-card.live .streamer-social-links {
-    border-top: 1px solid rgba(227, 41, 39, 0.2);
+    border-top: 1px solid rgba(41, 98, 227, 0.2);
 }
 
 .social-link {
@@ -613,7 +613,7 @@
     border: 1px solid var(--primary);
     border-radius: var(--radius-md);
     padding: var(--space-md);
-    box-shadow: 0 0 20px rgba(227, 41, 39, 0.5);
+    box-shadow: 0 0 20px rgba(41, 98, 227, 0.5);
     z-index: 1000;
     max-width: 350px;
     transform: translateX(120%);
@@ -705,7 +705,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(227, 41, 39, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(41, 98, 227, 0.3) 0%, transparent 70%);
     animation: pulse-opacity 3s infinite alternate;
 }
 
@@ -818,7 +818,7 @@
 
 .streamer-card.live {
     border-color: var(--primary);
-    box-shadow: 0 0 15px rgba(227, 41, 39, 0.3);
+    box-shadow: 0 0 15px rgba(41, 98, 227, 0.3);
 }
 
 /* Анімації для плавних переходів при фільтрації */
@@ -1020,7 +1020,7 @@
     width: 50px;
     height: 50px;
     border-radius: var(--radius-full);
-    background: rgba(227, 41, 39, 0.1);
+    background: rgba(41, 98, 227, 0.1);
     color: var(--primary);
     margin-bottom: var(--space-md);
     font-size: 24px;

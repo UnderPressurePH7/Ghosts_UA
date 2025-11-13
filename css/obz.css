@@ -24,7 +24,7 @@
 }
 
 .missions-buttons .btn:hover {
-    background: rgba(227, 41, 39, 0.1);
+    background: rgba(41, 98, 227, 0.1);
     border-color: var(--primary);
     transform: translateY(-2px);
 }
@@ -50,7 +50,6 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all var(--transition-normal);
     cursor: pointer;
-	
 }
 
 .mission-item:hover {
@@ -60,7 +59,7 @@
 }
 
 .mission-item.selected {
-    background: rgba(227, 41, 39, 0.1);
+    background: rgba(41, 98, 227, 0.1);
     border-color: var(--primary);
 }
 
@@ -182,7 +181,7 @@
 }
 
 .option-item.selected {
-    background: rgba(227, 41, 39, 0.1);
+    background: rgba(41, 98, 227, 0.1);
     border-color: var(--primary);
 }
 
