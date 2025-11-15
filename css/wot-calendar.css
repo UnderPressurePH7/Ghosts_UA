@@ -63,9 +63,9 @@
 }
 
 .event-calendar_day__current {
-    background-color: rgba(227, 41, 39, 0.2);
+    background-color: rgba(41, 98, 227, 0.2);
     border: 2px solid var(--primary);
-    box-shadow: 0 0 15px rgba(227, 41, 39, 0.3);
+    box-shadow: 0 0 15px rgba(41, 98, 227, 0.3);
     position: relative;
 }
 
@@ -165,7 +165,7 @@
     text-transform: uppercase;
     margin-bottom: 5px;
     display: inline-block;
-    background-color: rgba(227, 41, 39, 0.1);
+    background-color: rgba(41, 98, 227, 0.1);
     padding: 3px 8px;
     border-radius: 4px;
 }
@@ -281,7 +281,7 @@
 
 .past-event-status {
     display: inline-block;
-    background-color: rgba(227, 41, 39, 0.15);
+    background-color: rgba(41, 98, 227, 0.15);
     color: var(--text-secondary);
     font-size: 12px;
     padding: 5px 10px;
@@ -339,7 +339,7 @@
 }
 
 .event-date {
-    background-color: rgba(227, 41, 39, 0.1);
+    background-color: rgba(41, 98, 227, 0.1);
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -374,7 +374,7 @@
 }
 
 .event-category.tournament {
-    background-color: rgba(227, 41, 39, 0.15);
+    background-color: rgba(41, 98, 227, 0.15);
     color: #e32927;
 }
 
